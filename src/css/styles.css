@@ -1,0 +1,266 @@
+:root {
+    --bright: #e3dcd2;
+    --orange: #cc8b65;
+    --dark-blue: #013328;
+    --dark-black: #100c0d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Home page*/
+
+#mylogo {
+    display: flex;
+    margin: 10px;
+    float: left;
+}
+
+#mylogo img {
+    margin-top: 0;
+}
+
+#mylogo p {
+    color: var(--orange);
+    margin-top: 15px;
+    display: none;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+/*#navigation ul {
+    display: flex;
+    flex-basis: content;
+    justify-content: space-between;
+}
+*/
+
+#navigation {
+    text-align: center;
+    position: relative;
+}
+
+#navigation li {
+    margin-top: 15px;
+    list-style: none;
+    margin-left: 10px;
+    display: block;
+    float: left;
+    position: relative;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: var(--bright);
+    text-align: center;
+    padding: 14px 16px;
+    display: block;
+}
+
+#navigation a:hover {
+    background-color: var(--bright);
+    color: var(--dark-black);
+}
+
+#navigation a:active {
+    background-color: var(--orange);
+    color: #100c0d;
+}
+
+header button {
+    float: right;
+    margin: 10px;
+}
+
+header button img {
+    width: 35px;
+    height: 35px;
+}
+
+#BrightMode {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: var(--dark-blue);
+    margin-bottom: 30px;
+}
+
+.wh {
+    color: azure;
+}
+
+#banner h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+#navigation .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: var(--dark-blue);
+    padding: 10px;
+}
+
+#navigation li.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+#navigation .dropdown-menu li {
+    display: block;
+}
+
+#navigation .dropdown-menu li a {
+    color: var(--bright);
+    text-decoration: none;
+}
+
+#navigation .dropdown-menu li a:hover {
+    background-color: var(--bright);
+    color: var(--dark-black);
+}
+
+
+/*banner....*/
+
+footer a img {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    margin-top: 10px;
+    box-sizing: border-box;
+    height: 50px;
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding: 12px;
+    width: 100%;
+}
+
+footer p {
+    color: var(--bright);
+    font-size: 12px;
+    margin-top: 0.4em;
+}
+
+.social-media a {
+    margin-left: 20px;
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#banner {
+    padding-top: 300px;
+    max-width: 100%;
+    height: 700px;
+    background-image: url('/src/images/Screenshot_20220704-215740_Lightroom.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    text-align: center;
+}
+
+#banner h1 {
+    color: var(--orange);
+    font-size: 100px;
+}
+
+button:hover {
+    color: white;
+}
+
+button {
+    background-color: var(--dark-blue);
+    /* Green */
+    border: none;
+    color: var(--bright);
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+main h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+aside p {
+    margin: 10px 20px;
+}
+
+main button {
+    margin: 15px 45%;
+}
+
+#aboutImg {
+    max-width: 100%;
+}
+
+.skillsImg img {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+
+.skills {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.skillsImg {
+    margin: auto;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact {
+    width: 550px;
+    height: max-content;
+    margin: 150px auto;
+}
+
+.contact input {
+    width: 500px;
+    margin: 15px;
+}
+
+.contact #message {
+    width: 500px;
+    overflow-wrap: normal;
+}
+
+#projects {
+    text-align: center;
+}
+
+#projects p {
+    width: fit-content;
+}
+
+#projects img {
+    max-width: 100%;
+}
+
+.aboutme img {
+    margin: 30px;
+}

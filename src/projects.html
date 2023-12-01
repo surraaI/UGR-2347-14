@@ -5,32 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
-        <img id='logo' src="images/Screenshot_20221011-222046_Lightroom(1).jpg" alt="logo">
-        <p>Sura Itana</p>
+        <div id="mylogo">
+            <img id='logo' src="images/Screenshot_20221011-222046_Lightroom(1).jpg" alt="logo">
+            <p>Sura Itana</p>
+        </div>
+
+        <div id="ni">
+            <button id="NightMode"><img src="images/icons/darkmodepng.png" alt="NightMode"></button>
+            <button id="BrightMode"><img src="images/icons/brightModepng.png" alt="BrightMode"></button>
+        </div>
+
         <nav id="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About me</a> </li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="Contact.html">Contact me</a></li>
+                <li class="dropdown">
+                    <a href="index.html">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact me</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
-        <button><img src="images/icons/darkmodepng.png" alt="NightMode"></button>
-        <button><img src="images/icons/brightModepng.png" alt="BrightMode"></button>
+
+
 
     </header>
 
-    <main>
+    <main id="projects">
         <h1>my Projects</h1>
-        <a href="https://parapantest.vercel.app/"><img src="images/project1.png" alt="project1"></a>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor placeat optio officia voluptatem minus, facilis voluptas labore, quos quam doloribus eaque ad amet natus aliquam odit eligendi enim voluptatum praesentium. Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Explicabo iure, cumque eligendi eos similique exercitationem culpa fugit quod quis minima voluptate aliquid, eaque ipsum reiciendis adipisci quasi at ea ab! Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Dicta accusantium nobis animi recusandae in inventore a, perspiciatis asperiores exercitationem rem, ex nisi neque, voluptatem deleniti excepturi officiis culpa non nemo!</p>
+        <div>
+            <a href="https://parapantest.vercel.app/"><img src="images/project1.png" alt="project1"></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor placeat optio officia voluptatem minus, facilis voluptas labore, quos quam doloribus eaque ad amet natus aliquam odit eligendi enim voluptatum praesentium. Lorem ipsum dolor sit
+                amet consectetur, adipisicing elit. Explicabo iure, cumque eligendi eos similique exercitationem culpa fugit quod quis minima voluptate aliquid, eaque ipsum reiciendis adipisci quasi at ea ab! Lorem ipsum dolor sit, amet consectetur adipisicing
+                elit. Dicta accusantium nobis animi recusandae in inventore a, perspiciatis asperiores exercitationem rem, ex nisi neque, voluptatem deleniti excepturi officiis culpa non nemo!</p>
+
+        </div>
         <a href="https://pocket-console.vercel.app/games/paddle-pong"><img src="images/project2.png" alt="project2"></a>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor placeat optio officia voluptatem minus, facilis voluptas labore, quos quam doloribus eaque ad amet natus aliquam odit eligendi enim voluptatum praesentium. Lorem ipsum dolor sit amet
             consectetur, adipisicing elit. Explicabo iure, cumque eligendi eos similique exercitationem culpa fugit quod quis minima voluptate aliquid, eaque ipsum reiciendis adipisci quasi at ea ab! Lorem ipsum dolor sit, amet consectetur adipisicing

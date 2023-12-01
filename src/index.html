@@ -5,38 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
-        <img id='logo' src="images/Screenshot_20221011-222046_Lightroom(1).jpg" alt="logo">
-        <p>Sura Itana</p>
+        <div id="mylogo">
+            <img id='logo' src="images/Screenshot_20221011-222046_Lightroom(1).jpg" alt="logo">
+            <p>Sura Itana</p>
+        </div>
+
+        <div id="ni">
+            <button id="NightMode"><img src="images/icons/darkmodepng.png" alt="NightMode"></button>
+            <button id="BrightMode"><img src="images/icons/brightModepng.png" alt="BrightMode"></button>
+        </div>
+
         <nav id="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About me</a> </li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="Contact.html">Contact me</a></li>
+                <li class="dropdown">
+                    <a href="index.html">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact me</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
-        <button><img src="images/icons/darkmodepng.png" alt="NightMode"></button>
-        <button><img src="images/icons/brightModepng.png" alt="BrightMode"></button>
+
+
 
     </header>
     <section id="banner">
-        <div id="banner-image"></div>
-        <h1>Welcome to my Portfolio</h1>
-        <h2>Discover what </h2>
+
+        <h1>Hey, I'<span class="wh">m Sura!</span></h1>
+        <h2>Junior software engi<span class="wh">neer and web developer</span>.</span>
+        </h2>
         <button>About Me</button>
     </section>
     <footer>
         <div class="social-media">
-            <a href="https://www.linkedin.com/in/surraa-i/"><img src="images/icons/inkedin.png" alt="LinkedIn"></a>
-            <a href="https://www.facebook.com/sura.itana.1"><img src="images/icons/2021_Facebook_icon.svg.png" alt="Facebook"></a>
-            <a href="https://t.me/surraa777"><img src="images/icons/Telegram_logo.svg.png" alt="telegram"></a>
-            <a href="https://www.instagram.com/suraitana/"><img src="images/icons/instagram.png" alt="Instagram"></a>
-
+            <a href="https://www.linkedin.com/in/surraa-i/" target="_blank"><img src="images/icons/inkedin.png" alt="LinkedIn" class="linkedin"></a>
+            <a href="https://www.facebook.com/sura.itana.1" target="_blank"><img src="images/icons/2021_Facebook_icon.svg.png" alt="Facebook"></a>
+            <a href="https://t.me/surraa777" target="_blank"><img src="images/icons/Telegram_logo.svg.png" alt="telegram"></a>
+            <a href="https://www.instagram.com/suraitana/" target="_blank"><img src="images/icons/instagram.png" alt="Instagram"></a>
         </div>
         <p>&copy; 2023 Sura Itana. All rights reserved.</p>
     </footer>

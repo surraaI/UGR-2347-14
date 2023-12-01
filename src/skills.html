@@ -5,36 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
-        <img id='logo' src="images/Screenshot_20221011-222046_Lightroom(1).jpg" alt="logo">
-        <p>Sura Itana</p>
+        <div id="mylogo">
+            <img id='logo' src="images/Screenshot_20221011-222046_Lightroom(1).jpg" alt="logo">
+            <p>Sura Itana</p>
+        </div>
+
+        <div id="ni">
+            <button id="NightMode"><img src="images/icons/darkmodepng.png" alt="NightMode"></button>
+            <button id="BrightMode"><img src="images/icons/brightModepng.png" alt="BrightMode"></button>
+        </div>
+
         <nav id="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About me</a> </li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="Contact.html">Contact me</a></li>
+                <li class="dropdown">
+                    <a href="index.html">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About me</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact me</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
-        <button><img src="images/icons/darkmodepng.png" alt="NightMode"></button>
-        <button><img src="images/icons/brightModepng.png" alt="BrightMode"></button>
+
+
 
     </header>
     <main>
-        <section>
+        <section class="skills">
             <h2>My skills & tools</h2>
-            <img src="images/icons/skills/react.png" alt="react">
-            <img src="images/icons/skills/githubpng.png" alt="github">
-            <img src="images/icons/skills/node-js-javascript-web-application-express-js-computer-software-others.jpg" alt="node">
-            <img src="images/icons/skills/java-logo-1.png" alt="java">
-            <img src="images/icons/skills/html.png" alt="html">
-            <img src="images/icons/skills/python.png" alt="python">
-            <img src="images/icons/skills/download.png" alt="javascript">
-            <img src="images/icons/skills/css.png" alt="css">
+            <div class="skillsImg">
+                <img src="images/icons/skills/react.png" alt="react">
+                <img src="images/icons/skills/githubpng.png" alt="github">
+                <img src="images/icons/skills/node-js-javascript-web-application-express-js-computer-software-others.jpg" alt="node">
+                <img src="images/icons/skills/java-logo-1.png" alt="java">
+                <img src="images/icons/skills/html.png" alt="html">
+                <img src="images/icons/skills/python.png" alt="python">
+                <img src="images/icons/skills/download.png" alt="javascript">
+                <img src="images/icons/skills/css.png" alt="css">
+            </div>
 
         </section>
         <button>Download Resume</button>
