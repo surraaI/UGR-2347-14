@@ -197,13 +197,17 @@ button {
     font-size: 16px;
 }
 
+button:hover {
+    border: 2px solid yellow;
+}
+
+.Buttons {
+    margin: 10px 100px;
+}
+
 main h1 {
     font-size: 40px;
     text-align: center;
-}
-
-main button {
-    margin: 15px 45%;
 }
 
 aside p {
@@ -212,24 +216,28 @@ aside p {
 
 #aboutImg {
     max-width: 100%;
+    display: none;
 }
 
 .skillsImg img {
-    width: 100px;
+    width: 80px;
     height: 100px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .skills {
+    width: 100%;
     text-align: center;
     margin: 40px 0;
 }
 
 .skillsImg {
-    margin: auto;
+    margin: 30px auto;
     width: 300px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact {
@@ -239,7 +247,7 @@ aside p {
 }
 
 .contact input {
-    width: 280pxpx;
+    width: 280px;
     margin: 10px;
 }
 
