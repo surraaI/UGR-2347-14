@@ -252,8 +252,9 @@ aside p {
 }
 
 .contact #message {
-    width: 200px;
+    width: 280px;
     overflow-wrap: normal;
+    margin-left: 10px;
 }
 
 #projects {
