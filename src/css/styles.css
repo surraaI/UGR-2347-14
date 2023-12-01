@@ -155,7 +155,6 @@ footer {
 footer p {
     color: var(--bright);
     font-size: 12px;
-    margin-top: 0.4em;
 }
 
 .social-media a {
@@ -199,16 +198,16 @@ button {
 }
 
 main h1 {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-}
-
-aside p {
-    margin: 10px 20px;
 }
 
 main button {
     margin: 15px 45%;
+}
+
+aside p {
+    margin: 10px 20px;
 }
 
 #aboutImg {
@@ -216,8 +215,8 @@ main button {
 }
 
 .skillsImg img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin: 20px;
 }
 
@@ -228,24 +227,24 @@ main button {
 
 .skillsImg {
     margin: auto;
-    width: 600px;
+    width: 300px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .contact {
-    width: 550px;
+    width: 300px;
     height: max-content;
     margin: 150px auto;
 }
 
 .contact input {
-    width: 500px;
-    margin: 15px;
+    width: 280pxpx;
+    margin: 10px;
 }
 
 .contact #message {
-    width: 500px;
+    width: 200px;
     overflow-wrap: normal;
 }
 
@@ -254,13 +253,11 @@ main button {
 }
 
 #projects p {
+    margin-top: 10px;
+    margin-bottom: 30px;
     width: fit-content;
 }
 
 #projects img {
     max-width: 100%;
-}
-
-.aboutme img {
-    margin: 30px;
 }
