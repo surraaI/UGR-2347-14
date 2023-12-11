@@ -98,6 +98,14 @@ header {
     margin-bottom: 50px;
 }
 
+#navigation .dropdown {
+    display: block;
+}
+
+.Normal-menu {
+    display: none;
+}
+
 #navigation .dropdown-menu {
     display: none;
     position: absolute;
@@ -275,19 +283,21 @@ aside p {
 /*tablets*/
 
 @media screen and (min-width:481px) {
+    header {
+        display: grid;
+        grid-template-columns: 2fr 5fr 1fr;
+    }
     #navigation {
         display: inline-block;
         justify-content: space-around;
     }
-    #navigation .dropdown-menu {
-        display: flex;
-        position: absolute;
-        background-color: var(--dark-blue);
-        margin-left: 70px;
+    .dropdown {
+        display: none;
     }
-    #navigation div.dropdown:hover {
-        margin-left: 10px;
-        margin-top: 10px;
+    .Normal-menu {
+        display: flex;
+        flex-shrink: 1;
+        font-size: 1.2vw;
     }
     .hm {
         width: 100px;
@@ -303,12 +313,6 @@ aside p {
         align-items: center;
         gap: 2%;
     }
-    #mylogo p {
-        color: var(--bright);
-        margin-top: 15px;
-        margin-left: 15px;
-        display: block;
-    }
     .ProjectsContainer div {
         width: 45%;
         margin: 2%;
@@ -318,7 +322,8 @@ aside p {
         flex-wrap: wrap;
     }
     .ProjectsContainer img {
-        height: 400px;
+        max-width: 100%;
+        height: auto;
     }
     .aboutme-wrapper {
         display: flex;
@@ -328,9 +333,15 @@ aside p {
     }
     #aboutImg {
         display: block;
+        max-width: 50vw;
     }
     .aboutme aside {
         max-width: 45%;
+        font-size: 1.5vw;
+    }
+    .aboutme-wrapper {
+        display: flex;
+        flex-basis: auto;
     }
     .contact {
         width: 480px;
@@ -351,4 +362,11 @@ aside p {
 
 /*desktop*/
 
-@media screen and (min-width:769px) {}
+@media screen and (min-width:769px) {
+    #mylogo p {
+        color: var(--bright);
+        margin-top: 15px;
+        margin-left: 15px;
+        display: block;
+    }
+}
