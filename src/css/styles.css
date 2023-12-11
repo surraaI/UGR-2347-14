@@ -162,7 +162,7 @@ footer {
 
 footer p {
     color: var(--bright);
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .social-media a {
@@ -235,6 +235,7 @@ aside p {
 
 .skills {
     width: 100%;
+    max-height: 500px;
     text-align: center;
     margin: 40px 0;
 }
@@ -292,6 +293,10 @@ aside p {
         justify-content: space-around;
     }
     .dropdown {
+        display: none;
+        pointer-events: none;
+    }
+    #navigation .dropdown a {
         display: none;
     }
     .Normal-menu {
@@ -357,6 +362,10 @@ aside p {
         overflow-wrap: normal;
         margin-left: 10px;
     }
+    footer p {
+        color: var(--bright);
+        font-size: 1.5vw;
+    }
 }
 
 
@@ -368,5 +377,68 @@ aside p {
         margin-top: 15px;
         margin-left: 15px;
         display: block;
+    }
+    .dropdown {
+        display: none;
+        pointer-events: none;
+    }
+    .dropdown-menu {
+        display: none;
+    }
+    .contact {
+        width: 900px;
+        height: 500px;
+    }
+    #message {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .ProjectsContainer div {
+        width: 27%;
+        margin: 2%;
+    }
+    .ProjectsContainer {
+        display: flex;
+    }
+    .ProjectsContainer img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/*mobile landscape*/
+
+@media screen and (orientation: landscape) and (min-device-width:320px) and (max-device-width:769px) {
+    #projects {
+        text-align: center;
+        margin: 10px 5%;
+    }
+    #projects div {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+    #projects p {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: fit-content;
+    }
+    #projects img {
+        max-width: 100%;
+    }
+    .skills {
+        margin: 10% auto;
+        width: 700px;
+    }
+    .skillsImg {
+        margin: 30px auto;
+        width: 700px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
     }
 }
