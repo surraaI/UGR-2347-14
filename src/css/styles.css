@@ -409,7 +409,7 @@ aside p {
 
 /*mobile landscape*/
 
-@media screen and (orientation: landscape) and (min-device-width:320px) and (max-device-width:769px) {
+@media screen and (orientation: landscape) and (min-width:320px) and (max-width:769px) {
     #projects {
         text-align: center;
         margin: 10px 5%;
