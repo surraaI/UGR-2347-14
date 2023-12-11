@@ -36,20 +36,12 @@
     border-radius: 50%;
 }
 
-
-/*#navigation ul {
-    display: flex;
-    flex-basis: content;
-    justify-content: space-between;
-}
-*/
-
 #navigation {
     text-align: center;
     position: relative;
 }
 
-#navigation li {
+#navigation a {
     margin-top: 15px;
     list-style: none;
     margin-left: 10px;
@@ -110,23 +102,28 @@ header {
     display: none;
     position: absolute;
     background-color: var(--dark-blue);
-    padding: 10px;
 }
 
-#navigation li.dropdown:hover>.dropdown-menu {
+#navigation div.dropdown:hover>div.dropdown-menu {
+    margin-left: 60px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*#navigation .dropdown-menu a {
     display: block;
-}
+}*/
 
-#navigation .dropdown-menu li {
+#navigation .dropdown-menu a {
     display: block;
-}
-
-#navigation .dropdown-menu li a {
     color: var(--bright);
     text-decoration: none;
+    width: max-content;
 }
 
-#navigation .dropdown-menu li a:hover {
+#navigation .dropdown-menu a:hover {
     background-color: var(--bright);
     color: var(--dark-black);
 }
@@ -150,6 +147,9 @@ footer {
     flex-wrap: nowrap;
     padding: 12px;
     width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
 }
 
 footer p {
@@ -270,3 +270,85 @@ aside p {
 #projects img {
     max-width: 100%;
 }
+
+
+/*tablets*/
+
+@media screen and (min-width:481px) {
+    #navigation {
+        display: inline-block;
+        justify-content: space-around;
+    }
+    #navigation .dropdown-menu {
+        display: flex;
+        position: absolute;
+        background-color: var(--dark-blue);
+        margin-left: 70px;
+    }
+    #navigation div.dropdown:hover {
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .hm {
+        width: 100px;
+        float: left;
+    }
+    .skillsImg {
+        margin: 30px auto;
+        width: 500px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+    }
+    #mylogo p {
+        color: var(--bright);
+        margin-top: 15px;
+        margin-left: 15px;
+        display: block;
+    }
+    .ProjectsContainer div {
+        width: 45%;
+        margin: 2%;
+    }
+    .ProjectsContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ProjectsContainer img {
+        height: 400px;
+    }
+    .aboutme-wrapper {
+        display: flex;
+        margin: 20px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #aboutImg {
+        display: block;
+    }
+    .aboutme aside {
+        max-width: 45%;
+    }
+    .contact {
+        width: 480px;
+        height: max-content;
+        margin: 150px auto;
+    }
+    .contact input {
+        width: 470px;
+        margin: 10px;
+    }
+    .contact #message {
+        min-width: 470px;
+        overflow-wrap: normal;
+        margin-left: 10px;
+    }
+}
+
+
+/*desktop*/
+
+@media screen and (min-width:769px) {}
