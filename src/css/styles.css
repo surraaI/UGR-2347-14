@@ -5,6 +5,56 @@
     --dark-black: #100c0d;
 }
 
+
+/* Bright mode styles */
+
+body.bright-mode {
+    background-color: #fff;
+    color: #111;
+}
+
+#navigation.bright-mode a {
+    color: #111;
+}
+
+#navigation.bright-mode a:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+header.bright-mode {
+    background-color: #f1f1f1;
+}
+
+footer.bright-mode {
+    background-color: #f1f1f1;
+}
+
+
+/* Night mode styles */
+
+body.night-mode {
+    background-color: #111;
+    color: #fff;
+}
+
+#navigation a {
+    color: #fff;
+}
+
+#navigation a:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+header {
+    background-color: #333;
+}
+
+footer {
+    background-color: #333;
+}
+
 * {
     margin: 0;
     padding: 0;
