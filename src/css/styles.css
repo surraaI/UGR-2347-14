@@ -422,6 +422,15 @@ aside p {
 /*desktop*/
 
 @media screen and (min-width:769px) {
+    .Normal-menu {
+        display: flex;
+        flex-shrink: 1;
+        font-size: 1vw;
+    }
+    footer p {
+        color: var(--bright);
+        font-size: 1.2vw;
+    }
     #mylogo p {
         color: var(--bright);
         margin-top: 15px;

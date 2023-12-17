@@ -3,9 +3,6 @@ var body = document.body;
 function toggleNightMode() {
 
     body.classList.toggle('night-mode');
-
-
-
     nightModeButton.style.display = 'none';
     brightModeButton.style.display = 'inline-block';
 }
@@ -14,7 +11,6 @@ function toggleNightMode() {
 function toggleBrightMode() {
 
     body.classList.toggle('bright-mode');
-
     brightModeButton.style.display = 'none';
     nightModeButton.style.display = 'inline-block';
 
