@@ -5,48 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <script src="js/myjs.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <img id='logo' src="images/Screenshot_20221011-222046_Lightroom(1).jpg" alt="logo">
-        <p>Sura Itana</p>
-        <nav id="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About me</a> </li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="Contact.html">Contact me</a></li>
+    <header class="navbar is-white has-shadow">
+        <div class="navbar-brand">
+            <figure class="image is-30*30"><img class="navbar-item is-rounded" id='logo' src="images/Screenshot_20221011-222046_Lightroom(1).jpg" alt="logo" style="max-height: 70px;" class="py-2 px-2"></figure>
+            <p class="py-5 navbar-item">Sura Itana</p>
+        </div>
+        <a class="navbar-burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <nav>
+            <ul class="navbar-menu py-4" id="nav-links">
+                <li class="navbar-item"><a href="index.html">Home</a></li>
+                <li class="navbar-item"><a href="about.html">About me</a> </li>
+                <li class="navbar-item"><a href="skills.html">Skills</a></li>
+                <li class="navbar-item"><a href="projects.html">Projects</a></li>
+                <li class="navbar-item"><a href="Contact.html">Contact me</a></li>
             </ul>
         </nav>
-        <button><img src="images/icons/darkmodepng.png" alt="NightMode"></button>
-        <button><img src="images/icons/brightModepng.png" alt="BrightMode"></button>
-
+        <div class="navbar-end buttons my-3">
+            <button class="button"><img src="images/icons/darkmodepng.png" alt="NightMode" class="is-rounded" style="height: 20px;"></button>
+            <button class="button"><img src="images/icons/brightModepng.png" alt="BrightMode" style="height: 20px;"></button>
+        </div>
     </header>
-    <main>
-        <h1>About me</h1>
-        <p>Software engineer and web developer</p>
-        <p>Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam minima ea, repellendus vel explicabo provident nihil nam! Laboriosam esse autem ipsa vel quisquam quaerat tempore commodi soluta magni provident! Lorem
-            ipsum dolor sit, amet consectetur adipisicing elit. Praesentium temporibus possimus maiores consequatur totam, sapiente id ut quibusdam? Quae quia eius quasi at? Corporis laudantium rem nihil placeat, sequi error. amet consectetur adipisicing
-            elit. Perspiciatis doloribus eaque, officiis quam aliquam ea, facere blanditiis voluptatem dolores incidunt debitis suscipit corrupti eligendi odit neque aperiam commodi quas et?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa consequuntur provident laudantium sint ut odio, Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quam deserunt ullam veniam tempora odio! Quibusdam, explicabo quam rerum
-            dignissimos eos maiores atque accusamus repudiandae, nisi officiis, incidunt ea quasi.necessitatibus eos ab molestiae illum ducimus, veniam consectetur laborum qui? Voluptatem eius corporis omnis quaerat.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos pariatur deserunt deleniti nostrum molestiae commodi, praesentium suscipit aliquid ea quisquam cum ipsam perferendis
-            aut exercitationem voluptates numquam corrupti voluptate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi enim numquam explicabo, sequi dolore animi maiores tempora exercitationem illo, repellat unde minima magni error sunt
-            blanditiis nulla reprehenderit aliquid voluptatum. Minus tenetur, doloremque porro quo sit aperiam odit. Repudiandae placeat temporibus, non atque nesciunt assumenda, tenetur cupiditate debitis doloremque hic aperiam unde!</p>
-        <img src="images/Screenshot_20220704-215740_Lightroom.jpg" alt="">
-        <button>Skills</button>
+    <main class="hero-body columns">
+        <div class="column">
+            <h1 class="is-size-3 has-text-centered my-5">About me</h1>
+            <p>Software engineer and web developer</p>
+            <p>Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam minima ea, repellendus vel explicabo provident nihil nam! Laboriosam esse autem ipsa vel quisquam quaerat tempore commodi soluta magni provident!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium temporibus possimus maiores consequatur totam, sapiente id ut quibusdam? Quae quia eius quasi at? Corporis laudantium rem nihil placeat, sequi error. amet consectetur
+                adipisicing elit. Perspiciatis doloribus eaque, officiis quam aliquam ea, facere blanditiis voluptatem dolores incidunt debitis suscipit corrupti eligendi odit neque aperiam commodi quas et?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa consequuntur provident laudantium sint ut odio, Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quam deserunt ullam veniam tempora odio! Quibusdam, explicabo quam
+                rerum dignissimos eos maiores atque accusamus repudiandae, nisi officiis, incidunt ea quasi.necessitatibus eos ab molestiae illum ducimus, veniam consectetur laborum qui? Voluptatem eius corporis omnis quaerat.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos pariatur deserunt deleniti nostrum molestiae commodi, praesentium suscipit aliquid ea quisquam cum ipsam perferendis
+                aut exercitationem voluptates numquam corrupti voluptate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi enim numquam explicabo, sequi dolore animi maiores tempora exercitationem illo, repellat unde minima magni error sunt
+                blanditiis nulla reprehenderit aliquid voluptatum. Minus tenetur, doloremque porro quo sit aperiam odit. Repudiandae placeat temporibus, non atque nesciunt assumenda, tenetur cupiditate debitis doloremque hic aperiam unde!</p>
+        </div>
+        <figure class="image is-100*200 column"><img src="images/Screenshot_20220704-215740_Lightroom.jpg" alt=""></figure>
+
     </main>
-    <footer>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/surraa-i/"><img src="images/icons/inkedin.png" alt="LinkedIn"></a>
-            <a href="https://www.facebook.com/sura.itana.1"><img src="images/icons/2021_Facebook_icon.svg.png" alt="Facebook"></a>
-            <a href="https://t.me/surraa777"><img src="images/icons/Telegram_logo.svg.png" alt="telegram"></a>
-            <a href="https://www.instagram.com/suraitana/"><img src="images/icons/instagram.png" alt="Instagram"></a>
+    <div class="buttons mx-6"><button class="button">Skills</button></div>
+    <footer class="footer columns">
+        <p class="column">&copy; 2023 Sura Itana. All rights reserved.</p>
+        <div class="media column">
+
+            <a href="https://www.linkedin.com/in/surraa-i/"><img src="images/icons/inkedin.png" alt="LinkedIn" style="height: 30px;" class="mx-5"></a>
+            <a href="https://www.facebook.com/sura.itana.1"><img src="images/icons/2021_Facebook_icon.svg.png" alt="Facebook" style="height: 30px; " class="mx-5"></a>
+            <a href="https://t.me/surraa777"><img src="images/icons/Telegram_logo.svg.png" alt="telegram" style="height: 30px;" class="mx-5"></a>
+            <a href="https://www.instagram.com/suraitana/"><img src="images/icons/instagram.png" alt="Instagram" style="max-height: 30px;" class="mx-5"></a>
 
         </div>
-        <p>&copy; 2023 Sura Itana. All rights reserved.</p>
+
     </footer>
 </body>
 
