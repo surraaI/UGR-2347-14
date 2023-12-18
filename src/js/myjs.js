@@ -40,27 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
         link.click();
     });
 });
+const submitButton = document.getElementById(submit);
+submitButton.addEventListener('click', submitForm)
 
-function sendEmail(event) {
-    event.preventDefault();
-    var form = document.getElementById('contactForm');
-    var name = form.elements['name'].value;
-    var email = form.elements['email'].value;
-    var message = form.elements['message'].value;
-
-
-    emailjs.send('service_contactSura', 'template_Suraemail', {
-            name: name,
-            email: email,
-            message: message
-        })
-        .then(function(response) {
-            console.log('Email sent successfully');
-
-            form.reset();
-
-            location.reload();
-        }, function(error) {
-            console.error('Email sending failed:', error);
-        });
+function submitForm(event) {
+    event.preventDefault(); // Prevents the default form submission behavior
+    location.reload(); // Reloads the page
 }
