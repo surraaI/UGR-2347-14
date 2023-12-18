@@ -44,6 +44,6 @@ const submitButton = document.getElementById(submit);
 submitButton.addEventListener('click', submitForm)
 
 function submitForm(event) {
-    event.preventDefault(); // Prevents the default form submission behavior
-    location.reload(); // Reloads the page
+    event.preventDefault();
+    location.reload();
 }
