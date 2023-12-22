@@ -1,1 +1,0 @@
-import Flowbite from 'flowbite';
