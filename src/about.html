@@ -5,49 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <header>
-        <img id='logo' src="images/Screenshot_20221011-222046_Lightroom(1).jpg" alt="logo">
-        <p>Sura Itana</p>
-        <nav id="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About me</a> </li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="Contact.html">Contact me</a></li>
+    <header class="flex justify-between mx-3 my-4">
+        <div class="flex space-x-2">
+            <img id='logo' class="rounded-full w-12 h-12" src="images/Screenshot_20221011-222046_Lightroom(1).jpg" alt="logo">
+            <p class="my-3 hidden sm:block">Sura Itana</p>
+        </div>
+        <nav id="navigation" class="py-3 hidden sm:block">
+            <ul class="flex space-x-3 text-blue-500">
+                <li><a href="index.html" class=" hover:text-green-400">Home</a></li>
+                <li><a href="about.html" class=" hover:text-green-400">About me</a> </li>
+                <li><a href="skills.html" class=" hover:text-green-400">Skills</a></li>
+                <li><a href="projects.html" class=" hover:text-green-400">Projects</a></li>
+                <li><a href="Contact.html" class=" hover:text-green-400">Contact me</a></li>
             </ul>
         </nav>
-        <button><img src="images/icons/darkmodepng.png" alt="NightMode"></button>
-        <button><img src="images/icons/brightModepng.png" alt="BrightMode"></button>
 
-    </header>
-    <main>
-        <h1>About me</h1>
-        <p>Software engineer and web developer</p>
-        <p>Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam minima ea, repellendus vel explicabo provident nihil nam! Laboriosam esse autem ipsa vel quisquam quaerat tempore commodi soluta magni provident! Lorem
-            ipsum dolor sit, amet consectetur adipisicing elit. Praesentium temporibus possimus maiores consequatur totam, sapiente id ut quibusdam? Quae quia eius quasi at? Corporis laudantium rem nihil placeat, sequi error. amet consectetur adipisicing
-            elit. Perspiciatis doloribus eaque, officiis quam aliquam ea, facere blanditiis voluptatem dolores incidunt debitis suscipit corrupti eligendi odit neque aperiam commodi quas et?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa consequuntur provident laudantium sint ut odio, Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quam deserunt ullam veniam tempora odio! Quibusdam, explicabo quam rerum
-            dignissimos eos maiores atque accusamus repudiandae, nisi officiis, incidunt ea quasi.necessitatibus eos ab molestiae illum ducimus, veniam consectetur laborum qui? Voluptatem eius corporis omnis quaerat.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos pariatur deserunt deleniti nostrum molestiae commodi, praesentium suscipit aliquid ea quisquam cum ipsam perferendis
-            aut exercitationem voluptates numquam corrupti voluptate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi enim numquam explicabo, sequi dolore animi maiores tempora exercitationem illo, repellat unde minima magni error sunt
-            blanditiis nulla reprehenderit aliquid voluptatum. Minus tenetur, doloremque porro quo sit aperiam odit. Repudiandae placeat temporibus, non atque nesciunt assumenda, tenetur cupiditate debitis doloremque hic aperiam unde!</p>
-        <img src="images/Screenshot_20220704-215740_Lightroom.jpg" alt="">
-        <button>Skills</button>
-    </main>
-    <footer>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/surraa-i/"><img src="images/icons/inkedin.png" alt="LinkedIn"></a>
-            <a href="https://www.facebook.com/sura.itana.1"><img src="images/icons/2021_Facebook_icon.svg.png" alt="Facebook"></a>
-            <a href="https://t.me/surraa777"><img src="images/icons/Telegram_logo.svg.png" alt="telegram"></a>
-            <a href="https://www.instagram.com/suraitana/"><img src="images/icons/instagram.png" alt="Instagram"></a>
+        <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="sm:hidden text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            type="button"><a href="index.html" class=" hover:text-green-400">Home</a> <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+    </svg>
+    </button>
 
+        <!-- Dropdown menu -->
+        <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                <li>
+                    <a href="about.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-green-400">About</a>
+                </li>
+                <li>
+                    <a href="skills.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-green-400">Skills</a>
+                </li>
+                <li>
+                    <a href="projects.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-green-400">Projects</a>
+                </li>
+                <li>
+                    <a href="Contact.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-green-400">Contact Me</a>
+                </li>
+            </ul>
         </div>
-        <p>&copy; 2023 Sura Itana. All rights reserved.</p>
+
+        <div>
+            <button class="float-end"><img class="w-12 h-12 p-2" src="images/icons/darkmodepng.png" alt="NightMode"></button>
+            <button><img class="w-12 h-12 p-2 hidden sm:block" src="images/icons/brightModepng.png" alt="BrightMode"></button>
+        </div>
+    </header>
+    <h1 class="text-center text-4xl my-5">About me</h1>
+    <main class="sm:grid grid-cols-2 gap-2 mx-3 my-4">
+
+        <div>
+            <p>Software engineer and web developer</p>
+            <p>Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam minima ea, repellendus vel explicabo provident nihil nam! Laboriosam esse autem ipsa vel quisquam quaerat tempore commodi soluta magni provident!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium temporibus possimus maiores consequatur totam, sapiente id ut quibusdam? Quae quia eius quasi at? Corporis laudantium rem nihil placeat, sequi error. amet consectetur
+                adipisicing elit. Perspiciatis doloribus eaque, officiis quam aliquam ea, facere blanditiis voluptatem dolores incidunt debitis suscipit corrupti eligendi odit neque aperiam commodi quas et?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa consequuntur provident laudantium sint ut odio, Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quam deserunt ullam veniam tempora odio! Quibusdam, explicabo quam
+                rerum dignissimos eos maiores atque accusamus repudiandae, nisi officiis, incidunt ea quasi.necessitatibus eos ab molestiae illum ducimus, veniam consectetur laborum qui? Voluptatem eius corporis omnis quaerat.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos pariatur deserunt deleniti nostrum molestiae commodi, praesentium suscipit aliquid ea quisquam cum ipsam perferendis
+                aut exercitationem voluptates numquam corrupti voluptate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi enim numquam explicabo, sequi dolore animi maiores tempora exercitationem illo, repellat unde minima magni error sunt
+                blanditiis nulla reprehenderit aliquid voluptatum. Minus tenetur, doloremque porro quo sit aperiam odit. Repudiandae placeat temporibus, non atque nesciunt assumenda, tenetur cupiditate debitis doloremque hic aperiam unde!</p>
+        </div>
+        <img class="max-w-full my-3" src="images/Screenshot_20220704-215740_Lightroom.jpg" alt="myphoto">
+        <button class="my-3 border-black bg-blue-500 w-16">Skills</button>
+    </main>
+    <footer class="flex justify-between mx-5">
+        <p class="my-3">&copy; 2023 Sura Itana. All rights reserved.</p>
+        <div class="social-media flex space-x-0 sm:space-x-2 md:space-x-3 my-3">
+            <a href="https://www.linkedin.com/in/surraa-i/"><img class="w-12 h-12 p-1" src="images/icons/inkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/sura.itana.1"><img class="w-12 h-12 p-2" src="images/icons/2021_Facebook_icon.svg.png" alt="Facebook"></a>
+            <a href="https://t.me/surraa777"><img class="w-12 h-12 p-2" src="images/icons/Telegram_logo.svg.png" alt="telegram"></a>
+            <a href="https://www.instagram.com/suraitana/"><img class="w-12 h-12 p-1 rounded" src="images/icons/instagram.png" alt="Instagram"></a>
+        </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
 </body>
 
 </html>
