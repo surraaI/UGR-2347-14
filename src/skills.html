@@ -6,51 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header>
-        <img id='logo' src="images/Screenshot_20221011-222046_Lightroom(1).jpg" alt="logo">
-        <p>Sura Itana</p>
-        <nav id="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About me</a> </li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="Contact.html">Contact me</a></li>
+    <header class="h-25 navbar bg-secondary d-flex flex-nowrap">
+        <div class="d-flex mx-3">
+            <img id='logo' src="images/Screenshot_20221011-222046_Lightroom(1).jpg" alt="logo">
+            <p class="my-2 mx-3 d-none d-md-block">Sura Itana</p>
+        </div>
+        <nav id="navigation" class="d-none d-sm-flex flex-shrink-1">
+            <ul class="list-group d-flex flex-row gap-3 text-decoration-none">
+                <li class="list-group-item list-group-item-action h-75 my-2"><a href="index.html" class="link-underline link-underline-opacity-0">Home</a></li>
+                <li class="list-group-item list-group-item-action h-75 my-2"><a href="about.html" class="link-underline link-underline-opacity-0">About me</a> </li>
+                <li class="list-group-item list-group-item-action h-75 my-2"><a href="skills.html" class="link-underline link-underline-opacity-0">Skills</a></li>
+                <li class="list-group-item list-group-item-action h-75 my-2"><a href="projects.html" class="link-underline link-underline-opacity-0">Projects</a></li>
+                <li class="list-group-item list-group-item-action h-75 my-2"><a href="Contact.html" class="link-underline link-underline-opacity-0">Contact me</a></li>
             </ul>
         </nav>
-        <button><img src="images/icons/darkmodepng.png" alt="NightMode"></button>
-        <button><img src="images/icons/brightModepng.png" alt="BrightMode"></button>
+        <div class="dropdown d-sm-none">
+            <a class="btn btn-secondary dropdown-toggle" href="index.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Home
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="about.html">About me</a>
+                <a class="dropdown-item" href="skills.html">Skills</a>
+                <a class="dropdown-item" href="projects.html">Projects</a>
+                <a class="dropdown-item" href="Contact.html">Contact me</a>
+            </div>
+        </div>
+
+        <div class="navbar-right" id="NBmode">
+            <button class="btn"><img src="images/icons/darkmodepng.png" alt="NightMode"></button>
+
+        </div>
 
     </header>
     <main>
-        <section>
-            <h2>My skills & tools</h2>
-            <img src="images/icons/skills/react.png" alt="react">
-            <img src="images/icons/skills/githubpng.png" alt="github">
-            <img src="images/icons/skills/node-js-javascript-web-application-express-js-computer-software-others.jpg" alt="node">
-            <img src="images/icons/skills/java-logo-1.png" alt="java">
-            <img src="images/icons/skills/html.png" alt="html">
-            <img src="images/icons/skills/python.png" alt="python">
-            <img src="images/icons/skills/download.png" alt="javascript">
-            <img src="images/icons/skills/css.png" alt="css">
-
+        <section class="text-center">
+            <h2 class="text-center my-5">My skills & tools</h2>
+            <div class="container flex-wrap" id="skillsicons">
+                <img class="w-25 p-4 min-w-100" src="images/icons/skills/react.png" alt="react">
+                <img class="w-25 p-4" src="images/icons/skills/githubpng.png" alt="github">
+                <img class="w-25 p-4" src="images/icons/skills/node-js-javascript-web-application-express-js-computer-software-others.jpg" alt="node">
+                <img class="w-25 p-4" src="images/icons/skills/java-logo-1.png" alt="java">
+                <img class="w-25 p-4" src="images/icons/skills/html.png" alt="html">
+                <img class="w-25 p-4" src="images/icons/skills/python.png" alt="python">
+                <img class="w-25 p-4" src="images/icons/skills/download.png" alt="javascript">
+                <img class="w-25 p-4" src="images/icons/skills/css.png" alt="css">
+            </div>
+            <button class="btn btn-outline-info my-5">Download Resume</button>
         </section>
-        <button>Download Resume</button>
     </main>
-    <footer>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/surraa-i/"><img src="images/icons/inkedin.png" alt="LinkedIn"></a>
-            <a href="https://www.facebook.com/sura.itana.1"><img src="images/icons/2021_Facebook_icon.svg.png" alt="Facebook"></a>
-            <a href="https://t.me/surraa777"><img src="images/icons/Telegram_logo.svg.png" alt="telegram"></a>
+    <footer class="bg-light-dark d-flex flex-nowrap justify-content-between mt-3  bg-secondary flex-shrink-0">
+        <p class="mx-3 my-3">&copy; 2023 Sura Itana. All rights reserved.</p>
+        <div class="social-media my-2">
+            <a href="https://www.linkedin.com/in/surraa-i/"><img class="rounded-circle p-1" src="images/icons/inkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/sura.itana.1"><img class="p-1" src="images/icons/2021_Facebook_icon.svg.png" alt="Facebook"></a>
+            <a href="https://t.me/surraa777"><img class="p-1" src="images/icons/Telegram_logo.svg.png" alt="telegram"></a>
             <a href="https://www.instagram.com/suraitana/"><img src="images/icons/instagram.png" alt="Instagram"></a>
-
-
         </div>
-        <p>&copy; 2023 Sura Itana. All rights reserved.</p>
     </footer>
+    <script src="js/myjs.js"></script>
 </body>
 
 </html>

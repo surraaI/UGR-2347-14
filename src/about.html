@@ -6,49 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header>
-        <img id='logo' src="images/Screenshot_20221011-222046_Lightroom(1).jpg" alt="logo">
-        <p>Sura Itana</p>
-        <nav id="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About me</a> </li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="Contact.html">Contact me</a></li>
+    <header class="h-25 navbar bg-secondary d-flex flex-nowrap">
+        <div class="d-flex mx-3">
+            <img id='logo' src="images/Screenshot_20221011-222046_Lightroom(1).jpg" alt="logo">
+            <p class="my-2 mx-3 d-none d-md-block">Sura Itana</p>
+        </div>
+        <nav id="navigation" class="d-none d-sm-flex flex-shrink-1">
+            <ul class="list-group d-flex flex-row gap-3 text-decoration-none">
+                <li class="list-group-item list-group-item-action"><a href="index.html" class="link-underline link-underline-opacity-0">Home</a></li>
+                <li class="list-group-item list-group-item-action"><a href="about.html" class="link-underline link-underline-opacity-0">About me</a> </li>
+                <li class="list-group-item list-group-item-action"><a href="skills.html" class="link-underline link-underline-opacity-0">Skills</a></li>
+                <li class="list-group-item list-group-item-action"><a href="projects.html" class="link-underline link-underline-opacity-0">Projects</a></li>
+                <li class="list-group-item list-group-item-action"><a href="Contact.html" class="link-underline link-underline-opacity-0">Contact me</a></li>
             </ul>
         </nav>
-        <button><img src="images/icons/darkmodepng.png" alt="NightMode"></button>
-        <button><img src="images/icons/brightModepng.png" alt="BrightMode"></button>
+        <div class="dropdown d-sm-none">
+            <a class="btn btn-secondary dropdown-toggle" href="index.html" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Home
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="about.html">About me</a>
+                <a class="dropdown-item" href="skills.html">Skills</a>
+                <a class="dropdown-item" href="projects.html">Projects</a>
+                <a class="dropdown-item" href="Contact.html">Contact me</a>
+            </div>
+        </div>
+
+        <div class="navbar-right" id="NBmode">
+            <button class="btn"><img src="images/icons/darkmodepng.png" alt="NightMode"></button>
+
+        </div>
 
     </header>
     <main>
-        <h1>About me</h1>
-        <p>Software engineer and web developer</p>
-        <p>Lorem ipsum dolor sit, Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam minima ea, repellendus vel explicabo provident nihil nam! Laboriosam esse autem ipsa vel quisquam quaerat tempore commodi soluta magni provident! Lorem
-            ipsum dolor sit, amet consectetur adipisicing elit. Praesentium temporibus possimus maiores consequatur totam, sapiente id ut quibusdam? Quae quia eius quasi at? Corporis laudantium rem nihil placeat, sequi error. amet consectetur adipisicing
-            elit. Perspiciatis doloribus eaque, officiis quam aliquam ea, facere blanditiis voluptatem dolores incidunt debitis suscipit corrupti eligendi odit neque aperiam commodi quas et?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa consequuntur provident laudantium sint ut odio, Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quam deserunt ullam veniam tempora odio! Quibusdam, explicabo quam rerum
-            dignissimos eos maiores atque accusamus repudiandae, nisi officiis, incidunt ea quasi.necessitatibus eos ab molestiae illum ducimus, veniam consectetur laborum qui? Voluptatem eius corporis omnis quaerat.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos pariatur deserunt deleniti nostrum molestiae commodi, praesentium suscipit aliquid ea quisquam cum ipsam perferendis
-            aut exercitationem voluptates numquam corrupti voluptate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi enim numquam explicabo, sequi dolore animi maiores tempora exercitationem illo, repellat unde minima magni error sunt
-            blanditiis nulla reprehenderit aliquid voluptatum. Minus tenetur, doloremque porro quo sit aperiam odit. Repudiandae placeat temporibus, non atque nesciunt assumenda, tenetur cupiditate debitis doloremque hic aperiam unde!</p>
-        <img src="images/Screenshot_20220704-215740_Lightroom.jpg" alt="">
-        <button>Skills</button>
+        <h1 class="display-1 text-center my-5">About me</h1>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Software engineer and web developer</p>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ullam minima ea, repellendus vel explicabo provident nihil nam! Laboriosam esse autem ipsa vel quisquam quaerat tempore commodi soluta magni provident! Lorem ipsum dolor
+                        sit, amet consectetur adipisicing elit. Praesentium temporibus possimus maiores consequatur totam, sapiente id ut quibusdam? Quae quia eius quasi at? Corporis laudantium rem nihil placeat, sequi error. amet consectetur adipisicing
+                        elit. Perspiciatis doloribus eaque, officiis quam aliquam ea, facere blanditiis voluptatem dolores incidunt debitis suscipit corrupti eligendi odit neque aperiam commodi quas et?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa consequuntur provident laudantium sint ut odio, Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quam deserunt ullam veniam tempora odio! Quibusdam, explicabo
+                        quam rerum dignissimos eos maiores atque accusamus repudiandae, nisi officiis, incidunt ea quasi.necessitatibus eos ab molestiae illum ducimus, veniam consectetur laborum qui? Voluptatem eius corporis omnis quaerat.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos pariatur deserunt deleniti nostrum molestiae commodi, praesentium suscipit aliquid ea quisquam cum
+                        ipsam perferendis aut exercitationem voluptates numquam corrupti voluptate. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi enim numquam explicabo, sequi dolore animi maiores tempora exercitationem illo, repellat
+                        unde minima magni error sunt blanditiis nulla reprehenderit aliquid voluptatum. Minus tenetur, doloremque porro quo sit aperiam odit. Repudiandae placeat temporibus, non atque nesciunt assumenda, tenetur cupiditate debitis doloremque
+                        hic aperiam unde!
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="images/Screenshot_20220704-215740_Lightroom.jpg" alt="mypic">
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/surraa-i/"><img src="images/icons/inkedin.png" alt="LinkedIn"></a>
-            <a href="https://www.facebook.com/sura.itana.1"><img src="images/icons/2021_Facebook_icon.svg.png" alt="Facebook"></a>
-            <a href="https://t.me/surraa777"><img src="images/icons/Telegram_logo.svg.png" alt="telegram"></a>
+    <footer class="bg-light-dark d-flex flex-wrap justify-content-between mt-3  bg-secondary">
+        <p class="mx-3 my-3">&copy; 2023 Sura Itana. All rights reserved.</p>
+        <div class="social-media my-2">
+            <a href="https://www.linkedin.com/in/surraa-i/"><img class="rounded-circle p-1" src="images/icons/inkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/sura.itana.1"><img class="p-1" src="images/icons/2021_Facebook_icon.svg.png" alt="Facebook"></a>
+            <a href="https://t.me/surraa777"><img class="p-1" src="images/icons/Telegram_logo.svg.png" alt="telegram"></a>
             <a href="https://www.instagram.com/suraitana/"><img src="images/icons/instagram.png" alt="Instagram"></a>
 
         </div>
-        <p>&copy; 2023 Sura Itana. All rights reserved.</p>
+
     </footer>
+    <script src="js/myjs.js"></script>
 </body>
 
 </html>
